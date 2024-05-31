@@ -1,9 +1,13 @@
 # 3D-Image-to-FloorPlan-Converter
+
 A Python program to convert 3D images into 2D floor plans using image processing techniques.
-Problem Statement
+
+# Problem Statement
+
 The goal is to develop a Python program that can convert 3D images into floor plans. This involves extracting meaningful information from the 3D images to generate a 2D representation of the floor layout. The challenge includes handling image processing, edge detection, and contour extraction to produce accurate floor plans.
 
-Approach
+# Approach
+
 To address this problem, we will use the following approach:
 
 Image Loading: Load the 3D image from the specified path.
@@ -13,9 +17,10 @@ Edge Detection: Use the Canny edge detection algorithm to find edges in the imag
 Contour Detection: Find contours in the edge-detected image to outline the shapes present.
 Contour Drawing: Draw the detected contours on the original image to visualize the floor plan.
 Display Results: Display the original image, edge-detected image, and image with contours side by side for comparison.
-Solution
-The solution involves implementing the approach using Python and the OpenCV library for image processing. The program includes the following steps:
 
+# Solution
+
+The solution involves implementing the approach using Python and the OpenCV library for image processing. The program includes the following steps:
 Loading the Image: The program loads an image from a specified path. It includes error handling to ensure the image file is found and loaded correctly.
 Converting to Grayscale: The loaded image is converted to a grayscale image, which simplifies subsequent processing steps.
 Applying Gaussian Blur: A Gaussian blur is applied to the grayscale image to reduce noise and improve the accuracy of edge detection.
@@ -23,17 +28,6 @@ Edge Detection: The Canny edge detection algorithm is used to identify edges in 
 Finding Contours: Contours are detected in the edge-detected image, outlining the significant shapes.
 Drawing Contours: The detected contours are drawn on the original image to visualize the detected shapes.
 Displaying Images: The original image, edge-detected image, and image with contours are displayed side by side for comparison.
-Instructions for Running
-Install Required Libraries: Ensure you have Python installed on your system along with the necessary libraries. You can install the required libraries using pip:
-
-pip install opencv-python numpy matplotlib
-Prepare Images: Save the 3D images you want to process in the same directory as the script or provide the correct path to the images.
-
-Run the Script: Execute the script using a Python interpreter. For example, run the following command in your command line or terminal:
-
-python script_name.py
-Make sure to replace script_name.py with the actual name of your Python script file.
-
 Modify Image Path: If your images are not named 3d_interior.jpg, update the image_path variable in the process_image function with the correct path to your image file.
 
 Enhancements
