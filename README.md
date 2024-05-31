@@ -30,10 +30,9 @@ Drawing Contours: The detected contours are drawn on the original image to visua
 Displaying Images: The original image, edge-detected image, and image with contours are displayed side by side for comparison.
 Modify Image Path: If your images are not named 3d_interior.jpg, update the image_path variable in the process_image function with the correct path to your image file.
 
-Enhancements
+# Enhancements
 To further improve the solution, consider the following enhancements:
-
 Perspective Correction: Implement techniques to correct perspective distortion in 3D images.
 Feature Detection: Use machine learning models to detect and label specific architectural features (walls, doors, windows) to improve floor plan accuracy.
 Plan Generation: Generate a vector-based floor plan from the detected contours using libraries like svgwrite for scalable vector graphics.
-By following these steps, you can create a more robust and complex program for converting 3D images into floor plans.
+
